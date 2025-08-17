@@ -20,8 +20,6 @@ This launcher provides extra features to simplify running and managing the game.
 - `Launcher.ini` → configuration file for launcher, accounts & patches  
 - `compat/` → compatibility folders for display modes (1, 2, 3, 4)  
 
-## 🚀 How to Run
-1. Install **Python 3.8+**  
-2. Install required dependencies:
-   ```bash
-   pip install pycryptodome requests
+Requirment
+**Python 3.8+**
+
