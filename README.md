@@ -58,6 +58,7 @@ Each patch includes:
 `Patch<i>` (in [PatchStates]): True to enable, False to disable  
 
 Example Launcher.ini:
+<pre>
 [PatchOptions]
 Name1=no_sensor
 Address1=0x00572EB0
@@ -67,6 +68,7 @@ Name2=Avatar_Permanen
 Address2=0x0057347C
 Value2=galon.xfs
 Size2=19
+</pre>
 
 [PatchStates]
 Patch1=True
