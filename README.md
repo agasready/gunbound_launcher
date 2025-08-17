@@ -1,4 +1,4 @@
-# GunBound Launcher
+# GunBound Custom Launcher
 
 A Python-based launcher for **GunBound**, offering account management, memory patching, file updates, and display mode configuration.  
 This project is inspired by and builds upon [jglim/gunbound-launcher](https://github.com/jglim/gunbound-launcher).
