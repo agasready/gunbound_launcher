@@ -1,5 +1,6 @@
 GunBound Launcher
 A Python-based launcher for GunBound, offering account management, memory patching, file updates, and display mode configuration. This project is inspired by and builds upon jglim/gunbound-launcher.
+
 Features
 
 Account Management: Save, load, and delete encrypted credentials in Launcher.ini.
