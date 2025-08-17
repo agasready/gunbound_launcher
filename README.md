@@ -17,16 +17,6 @@ This project is inspired by and builds upon [jglim/gunbound-launcher](https://gi
 - `compat` folder with subfolders `1`, `2`, `3`, `4` (included in this repo)  
 - Internet connection for file updates  
 
-## 🚀 Installation
-# Clone the repository
-git clone https://github.com/agasready/gunbound_launcher.git
-cd gunbound_launcher
-
-# Install dependencies
-pip install pycryptodome requests
-Place gunbound.exe or gunbound.gme in the gunbound_launcher directory.
-The compat folder (with subfolders 1, 2, 3, 4) is included for display modes.
-
 ▶️ Usage
 Account Setup
 Enter username and password
