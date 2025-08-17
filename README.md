@@ -1,5 +1,7 @@
 # GunBound Custom Launcher <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" width="25">
 
+<img src="https://raw.githubusercontent.com/agasready/gunbound_launcher/refs/heads/main/pic.png">
+
 A Python-based launcher for **GunBound**, offering account management, memory patching, file updates, and display mode configuration.  
 This project is inspired by and builds upon [jglim/gunbound-launcher](https://github.com/jglim/gunbound-launcher).
 
