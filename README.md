@@ -25,30 +25,30 @@ Account Setup
 - Click Delete Account to remove a selected account
 
 Executable Path
-Click Browse to select gunbound.exe or gunbound.gme
-Or leave blank if it is in the same directory
+- Click Browse to select gunbound.exe or gunbound.gme
+- Or leave blank if it is in the same directory
 
 Patch Settings
-Select a patch from the dropdown (loaded from Launcher.ini)
-Check Enable Patch to toggle patches on/off
+- Select a patch from the dropdown (loaded from Launcher.ini)
+- Check Enable Patch to toggle patches on/off
 
 Display Modes
-Click Display to select a display mode:
-Full Screen (Voodoo2, DXwnd, Compat)
-Windowed
-Files from the compat folder are copied based on the selected mode
+- Click Display to select a display mode:
+- Full Screen (Voodoo2, DXwnd, Compat)
+- Windowed
+- Files from the compat folder are copied based on the selected mode
 
 Update Files
-Click Check Update to download the latest graphics.xfs and avatar.xfs
+- Click Check Update to download the latest graphics.xfs and avatar.xfs
 
 Launch Game
-Launch → Start GunBound with patches and auto-resume
-Start Suspend → Launch in suspended mode (manual resume needed)
-Resume → Continue a suspended process
-Terminate → Stop the game process
+- Launch → Start GunBound with patches and auto-resume
+- Start Suspend → Launch in suspended mode (manual resume needed)
+- Resume → Continue a suspended process
+- Terminate → Stop the game process
 
 🧩 Patch Configuration
-Custom patches are defined in Launcher.ini under [PatchOptions] and [PatchStates].
+- Custom patches are defined in Launcher.ini under [PatchOptions] and [PatchStates].
 
 Each patch includes:
 Name<i>: Patch name (e.g., no_sensor)
