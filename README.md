@@ -57,7 +57,7 @@ Each patch includes:
 `Size<i>`: Length in bytes (e.g., 13)  
 `Patch<i>` (in [PatchStates]): True to enable, False to disable  
 
-Example adding path into Launcher.ini:
+Example adding pacth into Launcher.ini:
 <pre>
 [PatchOptions]
 Name1=no_sensor
