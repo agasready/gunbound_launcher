@@ -211,7 +211,7 @@ def copy_folder_contents(source_folder, dest_folder, delete_graphics_dll=False):
 
 def check_latest_version():
     """Check the highest valid version for graphics.xfs and avatar.xfs independently starting from v1."""
-    base_url = "https://cdn.gunboundggh.com/prod/launcher/files-update/v{}/"
+    base_url = "https://cdn.gunbound.sample.com/prod/launcher/files-update/v{}/"
     files = ["graphics.xfs", "avatar.xfs"]
     latest_versions = {}
 
@@ -235,7 +235,7 @@ def check_latest_version():
 
 def download_files(file_versions, progress_bar, status_label, root):
     """Download graphics.xfs and avatar.xfs for their respective highest versions, skip if file size matches."""
-    base_url_template = "https://cdn.gunboundggh.com/prod/launcher/files-update/v{}/"
+    base_url_template = "https://cdn.gunboud.sample.com/prod/launcher/files-update/v{}/"
     files = ["graphics.xfs", "avatar.xfs"]
     dest_dir = os.getcwd()
     success = True
