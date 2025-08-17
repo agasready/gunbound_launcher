@@ -25,7 +25,7 @@ Account Setup
 - Click Delete Account to remove a selected account
 
 Executable Path
-- Click Browse to select gunbound.exe or gunbound.gme
+- Click Browse to select gunbound.exe or gunbound.gme or whatever its name
 - Or leave blank if it is in the same directory
 
 Patch Settings
