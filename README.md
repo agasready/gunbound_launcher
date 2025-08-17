@@ -79,4 +79,4 @@ compat/: Contains subfolders
 - 2: DXwnd
 - 3: Windowed
 - 4: Compat
-Launcher.ini: Auto-generated config file for accounts and patches
+'Launcher.ini': Auto-generated config file for accounts and patches
