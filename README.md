@@ -19,10 +19,10 @@ This project is inspired by and builds upon [jglim/gunbound-launcher](https://gi
 
 ▶️ Usage
 Account Setup
-Enter username and password
-Click Save Account to store encrypted credentials in Launcher.ini
-Select saved accounts from the dropdown to load credentials
-Click Delete Account to remove a selected account
+- Enter username and password
+- Click Save Account to store encrypted credentials in Launcher.ini
+- Select saved accounts from the dropdown to load credentials
+- Click Delete Account to remove a selected account
 
 Executable Path
 Click Browse to select gunbound.exe or gunbound.gme
