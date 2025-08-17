@@ -1,5 +1,5 @@
 GunBound Launcher
-A Python-based launcher for GunBound, offering account management, memory patching, file updates, and display mode configuration. Inspired by and built with reference to jglim/gunbound-launcher..
+A Python-based launcher for GunBound, offering account management, memory patching, file updates, and display mode configuration. This project is inspired by and builds upon jglim/gunbound-launcher.
 Features
 
 Account Management: Save, load, and delete encrypted credentials in Launcher.ini.
@@ -102,11 +102,3 @@ Folder Structure
 GB_launcher_v2.5.py: Main launcher script.
 compat/: Contains subfolders 1 (Voodoo2), 2 (DXwnd), 3 (Windowed), 4 (Compat) for display mode files.
 Launcher.ini: Auto-generated config file for accounts and patches.
-
-Notes
-
-Force Push: If pushing fails, use git push -f origin main to overwrite remote history (caution: this deletes remote data).
-Backup: Keep a copy of GB_launcher_v2.5.py, compat folder, and Launcher.ini in a safe place.
-HDD Dock: Ensure drive E: (HDD dock) is connected and stable for Git commands and launcher.
-Contributing: Open issues or pull requests for improvements.
-
