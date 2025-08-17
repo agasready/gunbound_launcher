@@ -50,12 +50,12 @@ Launch Game
 🧩 Patch Configuration
 - Custom patches are defined in Launcher.ini under [PatchOptions] and [PatchStates].
 
-Each patch includes:
-Name<i>: Patch name (e.g., no_sensor)
-Address<i>: Memory address in hex (e.g., 0x00572EB0)
-Value<i>: String to write (e.g., fAuswora.txd)
-Size<i>: Length in bytes (e.g., 13)
-Patch<i> (in [PatchStates]): True to enable, False to disable
+Each patch includes:  
+`Name<i>`: Patch name (e.g., no_sensor)  
+`Address<i>`: Memory address in hex (e.g., 0x00572EB0)  
+`Value<i>`: String to write (e.g., fAuswora.txd)  
+`Size<i>`: Length in bytes (e.g., 13)  
+`Patch<i>` (in [PatchStates]): True to enable, False to disable  
 
 Example Launcher.ini:
 [PatchOptions]
