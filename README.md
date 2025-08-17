@@ -18,7 +18,6 @@ This project is inspired by and builds upon [jglim/gunbound-launcher](https://gi
 - Internet connection for file updates  
 
 ## 🚀 Installation
-```bash
 # Clone the repository
 git clone https://github.com/agasready/gunbound_launcher.git
 cd gunbound_launcher
