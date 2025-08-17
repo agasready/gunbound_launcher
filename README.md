@@ -68,18 +68,15 @@ Name2=Avatar_Permanen
 Address2=0x0057347C
 Value2=galon.xfs
 Size2=19
-</pre>
 
 [PatchStates]
 Patch1=True
 Patch2=True
-📂 Folder Structure
-GB_launcher_v2.5.py: Main launcher script
+</pre>
 
 compat/: Contains subfolders
-1: Voodoo2
-2: DXwnd
-3: Windowed
-4: Compat
-
+- 1: Voodoo2
+- 2: DXwnd
+- 3: Windowed
+- 4: Compat
 Launcher.ini: Auto-generated config file for accounts and patches
