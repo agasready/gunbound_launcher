@@ -152,8 +152,10 @@ def run_gunbound(credentials, create_suspended=True, gunbound_path=None):
         ctypes.byref(processinfo)
     )
 
-    if not success:
-        return None
+    if success:
+        print(f"Process created: hProcess={processinfo.hProcess}, hThread={processinfo.hThread}, ProcessId={processinfo.dwProcessId}")
+    else:
+        print(f"CreateProcessW failed: {ctypes.GetLastError()}")
 
     return processinfo
 
@@ -211,7 +213,7 @@ def copy_folder_contents(source_folder, dest_folder, delete_graphics_dll=False):
 
 def check_latest_version():
     """Check the highest valid version for graphics.xfs and avatar.xfs independently starting from v1."""
-    base_url = "https://cdn.gunbound.sample.com/prod/launcher/files-update/v{}/"
+    base_url = "https://cdn.gunboundggh.com/prod/launcher/files-update/v{}/"
     files = ["graphics.xfs", "avatar.xfs"]
     latest_versions = {}
 
@@ -235,7 +237,7 @@ def check_latest_version():
 
 def download_files(file_versions, progress_bar, status_label, root):
     """Download graphics.xfs and avatar.xfs for their respective highest versions, skip if file size matches."""
-    base_url_template = "https://cdn.gunboud.sample.com/prod/launcher/files-update/v{}/"
+    base_url_template = "https://cdn.gunboundggh.com/prod/launcher/files-update/v{}/"
     files = ["graphics.xfs", "avatar.xfs"]
     dest_dir = os.getcwd()
     success = True
@@ -753,10 +755,15 @@ class GunBoundLauncherApp:
             return
         
         kernel32 = ctypes.WinDLL("kernel32")
-        if kernel32.ResumeThread(self.process_info.hProcess) == -1:
-            messagebox.showerror("Error", f"Failed to resume process: {ctypes.GetLastError()}")
+        suspend_count = kernel32.ResumeThread(self.process_info.hThread)  # Use hThread instead of hProcess
+        if suspend_count == -1:
+            error_code = ctypes.GetLastError()
+            messagebox.showerror("Error", f"Failed to resume process: Error code {error_code}")
+            print(f"ResumeThread failed with error code: {error_code}")
             self.status_label.config(text="Status: Failed to resume process")
         else:
+            if suspend_count > 0:
+                print(f"Thread still suspended, suspension count: {suspend_count}")
             messagebox.showinfo("Success", "Process resumed successfully.")
             self.status_label.config(text="Status: Process resumed")
             if self.exit_immediately:
